@@ -1,0 +1,48 @@
+POST http://localhost:8080/auth
+Content-Type: application/json
+
+{
+  "username": "lynas",
+  "password": "123456"
+}
+
+###
+
+http://localhost:8080/public
+
+###
+
+http://localhost:8080/public/2
+
+###
+
+POST http://localhost:8080/public
+Content-Type: application/json
+
+
+{
+  "id": 11,
+  "name": "Book 11"
+}
+
+
+###
+
+
+http://localhost:8080/protected
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJseW5hcyIsImNyZWF0ZWQiOjE1ODIxODY2ODUxNjB9.ZfBExA4oDzmvUC4DOv2xcV_XNf5wB0TkR2Kf-PMrXn1iQHd4xdip_kzlaOwXN4qdnf82HxVolPcajA4Rp8UGjw
+
+{
+  "id": 11,
+  "name": "Book 11"
+}
+###
+
+
+http://localhost:8080/protected/20
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJseW5hcyIsImNyZWF0ZWQiOjE1ODIxODY2ODUxNjB9.ZfBExA4oDzmvUC4DOv2xcV_XNf5wB0TkR2Kf-PMrXn1iQHd4xdip_kzlaOwXN4qdnf82HxVolPcajA4Rp8UGjw
+
+###
+
